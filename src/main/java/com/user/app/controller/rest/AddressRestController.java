@@ -12,7 +12,7 @@ public class AddressRestController {
 	@GetMapping(value = "/get-address")
 	public ResponseEntity<?> getAddress(){
 		
-		String address = "this address is from bangalore";
+		String address = "From Bangalore electronic city";
 		return ResponseEntity.ok(address);
 	}
 
