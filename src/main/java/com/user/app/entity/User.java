@@ -11,13 +11,13 @@ import jakarta.persistence.Table;
 
 
 @Entity
-@Table(name = "USER")
+@Table(name = "users")
 public class User {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "ID")
-	private Integer id;
+	private Long id;
 	@Column(name = "NAME")
 	private String name;
 	@Column(name = "ADDRESS")
@@ -32,13 +32,15 @@ public class User {
 	private LocalDate dateOfBirth;
 	@Column(name = "SALARY")
 	private Double salary;
-	
-	public Integer getId() {
+
+	public Long getId() {
 		return id;
 	}
-	public void setId(Integer id) {
+
+	public void setId(Long id) {
 		this.id = id;
 	}
+
 	public String getName() {
 		return name;
 	}

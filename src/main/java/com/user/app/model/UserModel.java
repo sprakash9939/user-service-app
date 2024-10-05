@@ -1,10 +1,11 @@
 package com.user.app.model;
 
 import java.time.LocalDate;
+import java.util.List;
 
 public class UserModel {
 
-	private Integer id;
+	private Long id;
 	private String name;
 	private String address;
 	private String dept;
@@ -13,11 +14,13 @@ public class UserModel {
 	private LocalDate dateOfBirth;
 	private Double salary;
 
-	public Integer getId() {
+	private List<HotelModel> hotelModelList;
+
+	public Long getId() {
 		return id;
 	}
 
-	public void setId(Integer id) {
+	public void setId(Long id) {
 		this.id = id;
 	}
 
@@ -77,4 +80,11 @@ public class UserModel {
 		this.salary = salary;
 	}
 
+	public List<HotelModel> getHotelModelList() {
+		return hotelModelList;
+	}
+
+	public void setHotelModelList(List<HotelModel> hotelModelList) {
+		this.hotelModelList = hotelModelList;
+	}
 }

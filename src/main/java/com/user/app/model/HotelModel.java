@@ -1,4 +1,4 @@
-package com.hotel.app.model;
+package com.user.app.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

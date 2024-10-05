@@ -52,8 +52,8 @@ public class UserRestController {
 
 	@GetMapping(value = "find-user-by-id/{userId}")
 	public ResponseEntity<?> findUserById(@PathVariable(name = "userId") Integer userId) {
-		User user = userService.findUserById(userId);
-		UserModel userModel = ApiConverter.getUserModelObject(user);
+		UserModel userModel = userService.findUserById(userId);
+
 		return ResponseEntity.ok(userModel);
 	}
 
